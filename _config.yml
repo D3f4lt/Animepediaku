@@ -6,7 +6,7 @@ description: Update seputar anime terbaru dan menarik. > # this means to ignore 
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "/animepediaku" # the subpath of your site, e.g. /blog
-url: "https://janczizikow.github.io/sleek" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://d3f4lt.github.io/animepediaku" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dimasetyaji # replace with your_twitter_username or comment to remove link from footer
 github_username:  D3f4lt # replace with your_github_username or comment to remove link from footer
 instagram_username: dimas_cyber4rt # replace with your_instagram_username or comment to remove link from footer
