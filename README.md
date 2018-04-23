@@ -1,2 +1,1 @@
-Animepediaku
-Update seputar anime terbaru & menarik
+Animepediaku, update seputar anime terbaru & menarik.
