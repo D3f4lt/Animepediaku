@@ -25,3 +25,5 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
     right: 0;
   }
 
+.pagination .arrow{color:#555;position:absolute}.pagination .arrow:hover,.pagination .arrow:focus{text-decoration:none}.pagination .left{left:0}.pagination .right{right:0}
+
