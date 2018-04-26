@@ -3,7 +3,7 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 .pagination {
   border-top: 5px solid #333;
   padding-top: 2rem;
-   position: absolute;   
+   position: relative;   
   text-align: center;}
 
   span {
@@ -12,15 +12,15 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
   }
 
   
-  .arrow {
-    position: absolute;   
-    
+
   }
 
   .left {
+    position: absolute;
     left: 0;
   }
 
   .right {
+    position: absolute;
     right: 0;
   }
