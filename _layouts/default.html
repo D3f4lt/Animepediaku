@@ -29,25 +29,8 @@ layout: compress
       <section class="blog">
         <div class="container">
           <div class="post-list" itemscope="" itemtype="http://schema.org/Blog">
-           
-             {% for post in paginator.posts %}
-    <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
-      <div>
-        <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
-        <h1 class="catalogue-title">{{ post.title }}</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-          {{ post.content | strip_html | truncatewords: 30 }}
-        </p>
-
-      </div>
-    </a>
-  {% endfor %}
-            
-             <!-- {% for post in site.posts %}
-              {% include card.html %}
-            {% endfor %}   -->
+                      
+             {% include card.html %}
            
             
           {% include pagination.html %}     
