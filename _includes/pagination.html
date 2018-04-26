@@ -1,9 +1,9 @@
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="left"> &#8592; Halaman sebelumnya</a>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="left"> &#8592; Halaman selanjutnya</a>
   {% endif %}
   <span>&nbsp;&nbsp;|&nbsp;{{ paginator.page }}&nbsp;|&nbsp;&nbsp;</span>
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="right"> Halaman selanjutnya &#8594;</a>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="right"> Halaman sebelumnya &#8594;</a>
   {% endif %}
 </div>
