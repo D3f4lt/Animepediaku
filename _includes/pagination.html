@@ -2,7 +2,7 @@
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="left"> &#8592; Halaman sebelumnya</a>
   {% endif %}
-  <span>&nbsp;&nbsp;{{ paginator.page }}&nbsp;&nbsp;</span>
+  <span>&nbsp;&nbsp;|&nbsp;{{ paginator.page }}&nbsp;|&nbsp;&nbsp;</span>
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="right"> Halaman selanjutnya &#8594;</a>
   {% endif %}
