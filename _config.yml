@@ -3,7 +3,7 @@ author: GitHub User
 email: dimasetyaaji@gmail.com # email for form submission, you also have to change it in _js/scripts.js
 description: > # this means to ignore newlines until "baseurl:"
   Update anime terbaru dan menarik.
-baseurl: "/animepediaku" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://d3f4lt.github.io/animepediaku" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dimasetyaji # replace with your_twitter_username or comment to remove link from footer
 github_username:  D3f4lt # replace with your_github_username or comment to remove link from footer
