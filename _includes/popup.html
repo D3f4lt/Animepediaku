@@ -1,1 +1,25 @@
-
+<link href="{{ '/assets/css/tingle.css' | relative_url }}" as="style" onload="this.rel='stylesheet'">
+<script src="{{ '/assets/js/tingle.js' | relative_url }}"></script>
+ <!-- Tingle tiny content -->
+        <div class="tingle-demo tingle-demo-force-close">
+            <h1>Forcing the user to use the close button</h1>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        </div>
+        <!-- /Tingle tiny content -->
+<script type="text/javascript">
+    var modalButtonOnly = new tingle.modal({
+        closeMethods: [],
+        footer: true,
+        stickyFooter: true
+    });
+    var btn5 = document.querySelector('.js-tingle-modal-5');
+    btn5.addEventListener('click', function(){
+        modalButtonOnly.open();
+    });
+    modalButtonOnly.setContent(document.querySelector('.tingle-demo-force-close').innerHTML);
+    modalButtonOnly.addFooterBtn('I agree', 'tingle-btn tingle-btn--primary tingle-btn--pull-right', function(){
+        modalButtonOnly.close();    });
+    modalButtonOnly.addFooterBtn('Cancel', 'tingle-btn tingle-btn--default tingle-btn--pull-right', function(){
+        modalButtonOnly.close();
+    });
+    </script>
