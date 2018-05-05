@@ -2,6 +2,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  {% assign pagecontent_description = page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | strip_html | strip_newlines | replace: '  ', ' ' | truncate: 160 %}
+  <meta name="description" content="{% if pagecontent_description.size > 10 %}{{ pagecontent_description }}{% else %}{{ site.description }}{% endif %}">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/icons/apple-touch-icon.png?v=qA3OXqyw77' | relative_url }}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{'/assets/img/icons/favicon-32x32.png?v=qA3OXqyw77' | relative_url }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{'/assets/img/icons/favicon-16x16.png?v=qA3OXqyw77' | relative_url }}">
@@ -13,6 +16,9 @@
   <meta name="application-name" content="Animepediaku">
   <meta name="msapplication-config" content="{{ '/assets/img/icons/browserconfig.xml?v=qA3OXqyw77' | relative_url }}">
   <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ "/sitemap.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
   {% if site.google_tag_manager %}
 
