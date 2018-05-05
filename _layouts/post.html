@@ -6,7 +6,6 @@ layout: compress
 {% include head.html %}
 
 <body class="site">
-{% include breadcrumbs.html %}
 
 {% if site.google_tag_manager %}
 
@@ -46,6 +45,7 @@ layout: compress
   </div>
   <main class="site__content">
     <div class="container">
+      {% include breadcrumbs.html %}
       <article class="post-content" itemprop="articleBody">
 
         {{ content }}
@@ -100,8 +100,7 @@ layout: compress
   </main>
 
   {% include footer.html %}
-  {% include mathjax.html %}
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   {% include lightbox.html %}
 
 </body>
