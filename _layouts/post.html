@@ -7,7 +7,6 @@ layout: compress
 
 <body class="site">
 {% include breadcrumbs.html %}
-{% include lightbox.html %}
 
 {% if site.google_tag_manager %}
 
@@ -56,7 +55,7 @@ layout: compress
         <div class="controls__item prev">
           {% if page.previous.url %}
 
-          <span>Previous</span>
+          <span>Sebelumnya</span>
           <a href="{{page.previous.url | relative_url }}">
                 <span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="6" height="11">
@@ -70,7 +69,7 @@ layout: compress
 
         <div class="controls__item next">
           {% if page.next.url %}
-          <span>Next</span>
+          <span>Selanjutnya</span>
           <a href="{{page.next.url | relative_url }}">
             {{page.next.title | strip_html | truncate: 30}}
             <span>
@@ -102,6 +101,9 @@ layout: compress
 
   {% include footer.html %}
   {% include mathjax.html %}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  {% include lightbox.html %}
+
 </body>
 
 </html>
