@@ -25,14 +25,18 @@ tagline: >
   Situs yang menampilkan seputar dunia anime terkini, menarik, dan juga membahas hal-hal internet lainnya.
 
 hero_img: posts/sleek_lg.jpg
-email: dimasetyaaji@gmail.com 
+
+email: dimasetyaaji@gmail.com
+
 twitter_username: dimasetyaji 
 github_username:  D3f4lt 
 instagram_username: dimas_cyber4rt
 
 disqus:
-  shortname: animepediaku 
+  shortname: animepediaku
   
+service_worker: true
+
 markdown: kramdown
 highlighter: rouge 
 theme: jekyll-sleek
