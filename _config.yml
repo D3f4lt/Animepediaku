@@ -3,7 +3,7 @@ author: Dimas Setya Aji
 description: > 
   Situs yang menampilkan seputar dunia anime terkini, menarik, dan juga membahas hal-hal internet lainnya.
 baseurl: "/animepediaku" 
-url: "https://d3f4lt.github.io/" 
+url: "https://d3f4lt.github.io" 
  
 social:
   name: Animepediaku
