@@ -19,35 +19,47 @@ layout: compress
 {% include header.html %}
 
   {% if page.featured-img %}
-
   <div class="hero lazyload" data-bg="{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{ page.featured-img }}.jpg">
-    {% else %}
-    <div class="hero dark-bg">
+  {% else %}
+  <div class="hero dark-bg">
+  {% endif %}
+    <div class="hero__wrap">
+      {% if post.categories or page.categories %}
+        <div class="hero__categories">
+          {% if post %}
+            {% assign categories = post.categories %}
+          {% else %}
+            {% assign categories = page.categories %}
+          {% endif %}
+          {% for category in categories %}
+            <a class="label" href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+            {% unless forloop.last %}&nbsp;{% endunless %}
+          {% endfor %}
+        </div>
       {% endif %}
-      <div class="hero__wrap">
-        <h1 class="hero__title">{{ page.title }}</h1>
-        <p class="hero__meta">
-            <span>
-              <time>{{ page.date | date_to_string }}</time>&nbsp;
-            </span>
-          <span>
-              {% assign words = content | number_of_words %}
-                {% if words < 360 %}
-                  1 min
-                {% else %}
-                  {{ words | divided_by:180 }} mins
-              {% endif %} read
-              &nbsp;
-          </span>
-        </p>
-      </div>
+      <h1 class="hero__title">{{ page.title }}</h1>
+      <p class="hero__meta">
+        <span>
+          <time>{{ page.date | date_to_string }}</time>&nbsp;&middot;
+        </span>
+        <span>
+            {% assign words = content | number_of_words %}
+              {% if words < 360 %}
+                1 min
+              {% else %}
+                {{ words | divided_by:180 }} mins
+            {% endif %} read
+        </span>
+      </p>
     </div>
   </div>
+
   <main class="site__content">
     <div class="container">
       <article class="post-content" itemprop="articleBody">
-      {% include breadcrumbs.html %}</br>
+      {% include breadcrumbs.html %}</br>  
       {% include text-expand.html %}
+  
 
         {{ content }}
 
@@ -56,7 +68,7 @@ layout: compress
         <div class="controls__item prev">
           {% if page.previous.url %}
 
-          <span>Sebelumnya</span>
+          <span>Previous</span>
           <a href="{{page.previous.url | relative_url }}">
                 <span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="6" height="11">
@@ -70,7 +82,7 @@ layout: compress
 
         <div class="controls__item next">
           {% if page.next.url %}
-          <span>Selanjutnya</span>
+          <span>Next</span>
           <a href="{{page.next.url | relative_url }}">
             {{page.next.title | strip_html | truncate: 30}}
             <span>
@@ -101,9 +113,6 @@ layout: compress
   </main>
 
   {% include footer.html %}
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  {% include lightbox.html %}
-
 </body>
 
 </html>
