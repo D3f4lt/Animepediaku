@@ -1,13 +1,10 @@
 title: Animepediaku
 author: Dimas Setya Aji
-email: dimasetyaaji@gmail.com # email for form submission, you also have to change it in _js/scripts.js
-description: > # this means to ignore newlines until "baseurl:"
+description: > 
   Situs yang menampilkan seputar dunia anime terkini, menarik, dan juga membahas hal-hal internet lainnya.
-baseurl: "/animepediaku" # the subpath of your site, e.g. /blog
-url: "https://d3f4lt.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: dimasetyaji # replace with your_twitter_username or comment to remove link from footer
-github_username:  D3f4lt # replace with your_github_username or comment to remove link from footer
-instagram_username: dimas_cyber4rt # replace with your_instagram_username or comment to remove link from footer
+baseurl: "/animepediaku" 
+url: "https://d3f4lt.github.io/" 
+ 
 social:
   name: Animepediaku
   links:
@@ -25,9 +22,13 @@ navigation: # Navigation links
 tagline: >
   Situs yang menampilkan seputar dunia anime terkini, menarik, dan juga membahas hal-hal internet lainnya.
 
-hero_img: posts/sleek_lg.jpg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
+hero_img: posts/sleek_lg.jpg
 
-email: your-email@domain.com # email for form submission
+email: dimasetyaaji@gmail.com 
+twitter_username: dimasetyaji 
+github_username:  D3f4lt 
+instagram_username: dimas_cyber4rt
+
 disqus:
   shortname: animepediaku # to enable comments replace with your_disqus_shortname
 
