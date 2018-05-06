@@ -18,19 +18,20 @@ navigation: # Navigation links
   - {name: 'Beranda', link: '/'}
   - {name: 'About', link: '/about'}
   - {name: 'Kontak', link: '/contact'}
+  - {name: 'Kontak', link: '/rss'}
+  - {name: 'Kontak', link: '/sitemap'}
 
 tagline: >
   Situs yang menampilkan seputar dunia anime terkini, menarik, dan juga membahas hal-hal internet lainnya.
 
 hero_img: posts/sleek_lg.jpg
-
 email: dimasetyaaji@gmail.com 
 twitter_username: dimasetyaji 
 github_username:  D3f4lt 
 instagram_username: dimas_cyber4rt
 
 disqus:
-  shortname: animepediaku # to enable comments replace with your_disqus_shortname
+  shortname: animepediaku 
 
 # Build settings
 markdown: kramdown
