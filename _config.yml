@@ -17,7 +17,10 @@ social:
 navigation: # Navigation links
   - {name: 'Beranda', link: '/'}
   - {name: 'Tentang', link: '/about'}
-  - {name: 'Kontak', link: '/contact'}
+  - {name: 'Kontak', link: '/contact'}  
+  - {name: 'Cari', link: '/pencarian'}  
+  - {name: 'Sitemap', link: '/sitemap.xml'}
+  - {name: 'RSS', link: '/feed.xml'}
 
 tagline: >
   Situs yang menampilkan seputar dunia anime terkini, menarik, dan juga membahas hal-hal internet lainnya.
