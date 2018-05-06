@@ -9,7 +9,10 @@
       <nav class="header__links">
         <div class="container header__links-wrapper">
           {% for item in site.navigation %}
-            <a class="header__link" href="{{ item.link | relative_url }}" itemprop="url">
+          <a class="header__link" href="{{ '/' | relative_url }}" itemprop="url"><span itemprop="name">Beranda</span></a>
+          <a class="header__link" href="{{ '/about' | relative_url }}" itemprop="url"><span itemprop="name">Tentang</span></a>
+          <a class="header__link" href="{{ '/pencarian' | relative_url }}" itemprop="url"><span itemprop="name">Cari</span></a>
+          <a class="header__link" href="{{ '/sitemap.xml' | relative_url }}" itemprop="url"><span itemprop="name">Sitemap</span></a>
               <span itemprop="name">{{ item.name }}</span>
             </a>
           {% endfor %}
