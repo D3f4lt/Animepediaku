@@ -13,13 +13,11 @@ social:
     - https://plus.google.com/+dimasetyaaji
     - https://github.com/d3f4lt
     
-navigation: 
+# THEME SETTINGS
+navigation: # Navigation links
   - {name: 'Beranda', link: '/'}
   - {name: 'Tentang', link: '/about'}
-  - {name: 'Kontak', link: '/contact'}  - 
-  - {name: 'Cari', link: '/pencarian'}
-  - {name: 'Rss', link: '/rss'}
-  - {name: 'Sitemap', link: '/sitemap'}
+  - {name: 'Kontak', link: '/contact'}
 
 tagline: >
   Situs yang menampilkan seputar dunia anime terkini, menarik, dan juga membahas hal-hal internet lainnya.
