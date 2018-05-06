@@ -32,10 +32,9 @@ instagram_username: dimas_cyber4rt
 
 disqus:
   shortname: animepediaku 
-
-# Build settings
+  
 markdown: kramdown
-highlighter: rouge # or pygments or null
+highlighter: rouge 
 theme: jekyll-sleek
 exclude:
   - README.md
